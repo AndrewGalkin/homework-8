@@ -1,0 +1,38 @@
+.link {
+  color: var(--main-text-color);
+  margin-right: 50px;
+  transition: color var(--animation);
+
+  &:hover {
+    color: var(--brend-color);
+  }
+  &:focus {
+    color: var(--brend-color);
+  }
+}
+.main-links {
+  display: flex;
+}
+.social-icons-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background var(--animation);
+
+  &:hover {
+    background: var(--brend-color);
+  }
+  &:focus {
+    background: var(--brend-color);
+  }
+  &:hover .icons {
+    fill: var(--main-color);
+  }
+  &:focus .icons {
+    fill: var(--main-color);
+  }
+}

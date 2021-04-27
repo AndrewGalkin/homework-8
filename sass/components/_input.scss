@@ -1,0 +1,10 @@
+.input-check {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:checked + .check-box {
+    background-image: url(../svg/images-svg/checkbox-vector-hover.svg);
+    background-color: var(--brend-color);
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,38 @@
+@import "./utils/variables";
+@import "./base/fonts";
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/button";
+@import "./components/title";
+@import "./components/name";
+@import "./components/form";
+@import "./components/social-icons";
+@import "./components/modal";
+@import "./components/highlight";
+@import "./components/clients-link";
+@import "./components/clients-list";
+@import "./components/description";
+@import "./components/modal-icons";
+@import "./components/label";
+@import "./components/check";
+@import "./components/textarea";
+@import "./components/items";
+@import "./components/close";
+@import "./components/input";
+@import "./components/list";
+@import "./components/link";
+@import "./components/link-with-icons";
+
+@import "./layouts/section";
+@import "./layouts/about";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/info";
+@import "./layouts/catalog";
+
+.team-image {
+  border-radius: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

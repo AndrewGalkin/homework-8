@@ -1,0 +1,120 @@
+.mobile-menu-button {
+  position: relative;
+  z-index: 105;
+  background-color: transparent;
+  border: none;
+  right: -17em;
+  top: 3px;
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu-button {
+    display: none;
+    max-width: 1200px;
+  }
+}
+.icon-close {
+  display: none;
+}
+.is-open {
+  .icon-close {
+    display: block;
+  }
+  .icon-menu {
+    display: none;
+  }
+}
+.mobile-menu-icon {
+  width: 24px;
+  height: 16px;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+  color: var(--main-text-color);
+  transition: right var(--animation);
+
+  &.is-open {
+    right: 0;
+  }
+  .header__list {
+    flex-direction: column;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-left: 40px;
+    margin-top: 4px;
+    .link {
+      margin-bottom: 32px;
+      display: block;
+    }
+    .link-studio {
+      margin-bottom: 28px;
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        bottom: -5px;
+        border-radius: 2px;
+        background-color: var(--brend-color);
+      }
+    }
+  }
+
+  .link-with-icons {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 270px;
+    .link-with-item:nth-child(1) {
+      margin-bottom: 32px;
+      color: var(--brend-color);
+    }
+    .link-with-item:nth-child(2) {
+      margin-bottom: 32px;
+      font-size: 24px;
+      letter-spacing: 0.02em;
+    }
+  }
+  .mobile-main-link {
+    padding-top: 24px;
+    padding-left: 15px;
+  }
+}
+
+.mobile-overlay {
+  width: 100%;
+}
+.mobile-social-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-left: 40px;
+  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-top: 32px;
+
+  a {
+    color: var(--brend-color);
+  }
+  .mobile-social-link {
+    margin-right: 20px;
+  }
+}

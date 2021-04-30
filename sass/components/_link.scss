@@ -12,7 +12,12 @@
 }
 .main-links {
   display: flex;
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 .social-icons-link {
   display: flex;
   width: 44px;

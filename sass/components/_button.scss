@@ -83,6 +83,12 @@
   align-items: center;
   margin-left: 12px;
   outline: none;
+
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+  }
 }
 .submit-button > .svg-subcribe {
   width: 24px;

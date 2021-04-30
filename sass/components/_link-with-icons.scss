@@ -21,3 +21,9 @@
 .link-with-icons > .link-with-item:not(:last-child) {
   margin-right: 30px;
 }
+
+@media screen and (max-width: 767.98px) {
+  .mobile-contacts {
+    display: none;
+  }
+}

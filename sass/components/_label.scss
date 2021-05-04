@@ -18,9 +18,12 @@
 .label-footer {
   display: flex;
   justify-content: space-between;
+  display: block;
+  text-align: center;
 
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-    display: block;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
   }
 }

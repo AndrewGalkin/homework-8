@@ -21,11 +21,16 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 0;
+  justify-content: center;
 
   .social-svg-icons {
     width: 20px;
     height: 20px;
     fill: var(--main-color);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    justify-content: left;
   }
 }
 .social-networks-icons {

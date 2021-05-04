@@ -1,14 +1,7 @@
 html {
   box-sizing: border-box;
 }
-.title,
-.title-2,
-.title-studio-footer {
-  font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
+
 button {
   display: block;
   cursor: pointer;
@@ -29,10 +22,10 @@ p {
 img {
   display: block;
 }
-.link-studio {
-  margin-right: 50px;
+.link-after {
   position: relative;
-
+  margin-right: 50px;
+  display: block;
   &::after {
     position: absolute;
     content: "";

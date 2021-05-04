@@ -1,11 +1,25 @@
 .checkbox {
   display: flex;
-  font-size: 14px;
-  line-height: 1.7;
+
+  font-size: 12px;
+
+  line-height: 1.16;
+
   letter-spacing: 0.03em;
+
   justify-content: center;
   margin-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: var(--other-text-color);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .check {
@@ -19,10 +33,15 @@
   width: 16px;
   height: 15px;
   background-image: url(../svg/images-svg/checkbox-vector.svg);
-  margin-left: -1.4em;
-  margin-top: 4px;
+  margin-left: -1.8em;
+  margin-top: -2px;
   cursor: pointer;
   transition: background-image var(--animation);
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin-top: 3px;
+  }
 }
 
 .check-span {

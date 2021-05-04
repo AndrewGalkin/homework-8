@@ -1,7 +1,7 @@
 .main-section {
   background-color: #2f303a;
   color: var(--main-color);
-  height: 600px;
+  height: 400px;
   display: flex;
   align-items: center;
   background-image: linear-gradient(
@@ -9,28 +9,68 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgi-1.jpg);
+    url(../images/img/mobile/bg-mobile.png);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img/tablet/bg-tablet.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img/desktop/bg.jpg);
+    height: 600px;
+  }
 }
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 .team-section {
-  padding-bottom: 96px;
+  padding-bottom: 60px;
   padding-top: 94px;
   background-color: var(--background-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 }
 .about-us-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: block;
+  }
 }
 .main-portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients-section {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }

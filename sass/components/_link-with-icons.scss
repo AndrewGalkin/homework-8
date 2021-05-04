@@ -1,25 +1,45 @@
 .link-with-icons {
-  margin-left: 254px;
+  margin-left: 34px;
   display: flex;
+  flex-wrap: wrap;
 
   .icon {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: var(--other-text-color);
-    margin-right: 10px;
+    margin-right: 8px;
     transition: color, fill var(--animation);
   }
   .icon-2 {
     width: 10px;
-    height: 16px;
+    height: 14px;
     fill: var(--other-text-color);
-    margin-right: 10px;
+    margin-right: 8px;
     transition: color, fill var(--animation);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin-left: 255px;
+    flex-wrap: nowrap;
+    .icon {
+      width: 16px;
+      height: 12px;
+      margin-right: 10px;
+    }
+    .icon-2 {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+    }
   }
 }
 
 .link-with-icons > .link-with-item:not(:last-child) {
   margin-right: 30px;
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 767.98px) {

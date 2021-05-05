@@ -364,6 +364,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .link-after {
@@ -560,12 +561,18 @@ img {
 }
 
 .team-name {
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin: 0;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-name {
+    font-size: 36px;
+  }
 }
 
 .section-name {
@@ -1399,7 +1406,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-left: -30px;
   margin-bottom: 0;
 }
@@ -1693,21 +1700,34 @@ img {
   padding-top: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .section {
+    padding-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 60px;
+  }
+}
+
 .team-section {
   padding-bottom: 60px;
-  padding-top: 94px;
+  padding-top: 60px;
   background-color: var(--background-color);
 }
 
 @media screen and (min-width: 1200px) {
   .team-section {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 

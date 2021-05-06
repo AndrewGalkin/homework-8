@@ -940,6 +940,12 @@ img {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-top: -50px;
+  }
+}
+
 .list-description {
   font-size: 14px;
   line-height: 24px;
@@ -1209,7 +1215,7 @@ img {
 .clients-item {
   height: 90px;
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   list-style-type: none;
@@ -1249,6 +1255,15 @@ img {
 @media screen and (min-width: 768px) {
   .list-items {
     flex-basis: calc((100% - 60px) / 2);
+  }
+  .list-items:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-items {
+    margin-bottom: 0;
   }
 }
 
@@ -1422,6 +1437,12 @@ img {
   margin-top: -30px;
   margin-left: -30px;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    margin-top: -50px;
+  }
 }
 
 .link {

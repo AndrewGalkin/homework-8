@@ -44,7 +44,7 @@
 .clients-item {
   height: 90px;
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   list-style-type: none;
@@ -74,6 +74,13 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 
   &::before {

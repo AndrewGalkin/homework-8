@@ -572,6 +572,7 @@ img {
 @media screen and (min-width: 1200px) {
   .team-name {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -587,6 +588,7 @@ img {
 @media screen and (min-width: 1200px) {
   .section-name {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
